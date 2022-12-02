@@ -1,5 +1,6 @@
 # Dashboard App
-A Web App that provides the admin with a full dashboard with different views and filtering. The dashboard contians a navigation sidebar, calender, graphs for data visualization and fully fledge form
+A Web App that provides the admin with a full dashboard with different views and filtering. The dashboard contians a navigation sidebar, calender, graphs for data visualization and fully fledge form. Moreover the app has light and dark Mode
+
 
 ## Third Parties: 
 1) react-router-dom: provides app routing, contains bindings for using React Router in web applications.
