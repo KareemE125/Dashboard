@@ -1,3 +1,19 @@
+# Dashboard App
+A Web App that provides the admin with a full dashboard with different views and filtering. The dashboard contians a navigation sidebar, calender, graphs for data visualization and fully fledge form
+
+## Third Parties: 
+1) react-router-dom: provides app routing, contains bindings for using React Router in web applications.
+2) mui: material ui.
+3) react-pro-sidebar: provides a set of components for creating high level and customizable side navigation.
+4) fullcalendar: JavaScript library for creating calendar interfaces.
+5) nivo: provides a rich set of data visualization components.
+6) formik: form management library that ease creating React forms.
+7) yup: JavaScript schema builder for value parsing and validation.
+
+---
+---
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
