@@ -5,25 +5,30 @@ import { MdOutlineCancel } from 'react-icons/md'
 import { TooltipComponent } from '@syncfusion/ej2-react-popups'
 
 import { links } from '../data/dummy'
+import { useAppContext } from '../context/AppContext'
 
-export default function Sidebar() {
+export default function Sidebar() 
+{
+
+  let { activeSideBar, setActiveSideBar } = useAppContext();
+
   const activeLinkClass = 'flex items-center pl-5 py-2 rounded-lg text-white text-md m-1 dark:text-black dark:bg-gray-200 bg-slate-900 text-white';
 
   const normalLinkClass = 'flex items-center pl-5 py-2 rounded-lg text-md text-gray-700 hover:bg-slate-900 hover:text-white dark:text-gray-200 dark:hover:text-black dark:hover:bg-gray-200 m-1';
 
-  let isActiveSideBar = true;
+  
 
   return <aside className='pl-5 h-screen md:overflow-hidden overflow-auto md:hover:overflow-auto pb-8'>
     {
-      isActiveSideBar && <>
+      activeSideBar && <>
         <div className='flex justify-between items-center mt-2  '>
 
-          <Link className='items-center flex gap-1 text-xl font-extrabold tracking-tighter dark:text-white text-slate-900 ' to='/' onClick={() => { }} >
+          <Link className='items-center flex gap-1 text-xl font-extrabold tracking-tighter dark:text-white text-slate-900 ' to='/' onClick={() => setActiveSideBar(false) } >
             <SiDgraph className='text-2xl' /> <span>Dashboard</span>
           </Link>
 
           <TooltipComponent className='pr-2' content='Menu' position='BottomCenter'>
-            <button className='text-xl rounded-full p-2 hover:bg-light-gray mt-2 block md:hidden' type='button'>
+            <button className='text-xl rounded-full p-2 hover:bg-light-gray mt-2 block md:hidden' type='button' onClick={()=> setActiveSideBar( prev => !prev ) }>
               <MdOutlineCancel />
             </button>
           </TooltipComponent>

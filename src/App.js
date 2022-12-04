@@ -7,11 +7,12 @@ import { Navbar, Footer, Sidebar, ThemeSettings } from './components'
 import { Ecommerce, Kanban, Calendar, Employees, Stacked, Pyramid, Customers, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor, Orders } from './pages'
 
 import './App.css'
+import { useAppContext } from './context/AppContext'
 
 export default function App() {
 
-  let isActiveSideBar = true;
-
+  let { activeSideBar } = useAppContext();
+  
   return (
     <main>
       <BrowserRouter>
@@ -32,7 +33,7 @@ export default function App() {
 
           {/* Sidebar */}
           {
-            isActiveSideBar ?
+            activeSideBar ?
               <aside className='w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white'>
                 <Sidebar />
               </aside>
@@ -43,7 +44,7 @@ export default function App() {
           }
 
           {/* Navbar */}
-          <nav className={`dark:bg-main-bg bg-main-bg min-h-screen w-full ${isActiveSideBar ? 'md:pl-72' : 'flex-2'}`}>
+          <nav className={`dark:bg-main-bg bg-main-bg min-h-screen w-full ${activeSideBar ? 'md:pl-72' : 'flex-2'}`}>
             <div className='fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full'>
               <Navbar />
             </div>
