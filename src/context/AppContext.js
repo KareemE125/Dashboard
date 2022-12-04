@@ -9,8 +9,8 @@ const initialState = {
     notification: false
 }
 
-export default function AppContextProvider({ children }){
-
+export default function AppContextProvider({ children })
+{
     // For Sidebar whether is opened or not
     const [activeSideBar, setActiveSideBar] = useState(true);
 

@@ -9,12 +9,12 @@ import { Ecommerce, Kanban, Calendar, Employees, Stacked, Pyramid, Customers, Li
 import './App.css'
 import { useAppContext } from './context/AppContext'
 
-export default function App() {
+export default function App() 
+{
 
   let { activeSideBar } = useAppContext();
   
-  return (
-    <main>
+  return <main>
       <BrowserRouter>
         <div className='flex relative dark:bg-main-dark-bg'>
 
@@ -37,13 +37,13 @@ export default function App() {
           </aside>
               
           
-
           {/* Navbar */}
           <nav className={`dark:bg-main-bg bg-main-bg min-h-screen w-full ${activeSideBar ? 'md:pl-72' : 'flex-2'}`}>
             <div className='fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full'>
               <Navbar />
             </div>
           </nav>
+
 
           {/* Routing */}
           <div>
@@ -75,9 +75,7 @@ export default function App() {
             </Routes>
           </div>
 
-
         </div>
       </BrowserRouter>
-    </main>
-  )
+    </main>;
 }

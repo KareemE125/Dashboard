@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect } from 'react'
 import { useAppContext } from '../context/AppContext';
 
@@ -19,8 +20,9 @@ const TITLES =
   UserProfile: 'userProfile',
 }
 
-export default function Navbar() {
-  const { activeSideBar, setActiveSideBar, isClicked, setIsClicked, navbarBtnHandler, screenSize, setScreenSize } = useAppContext();
+export default function Navbar() 
+{
+  const { setActiveSideBar, isClicked, navbarBtnHandler, screenSize, setScreenSize } = useAppContext();
 
   useEffect(() => {
 
@@ -32,14 +34,9 @@ export default function Navbar() {
 
   useEffect(() => {
 
-    if(screenSize <= 900){
-      setActiveSideBar(false);
-    }
-    else{
-      setActiveSideBar(true);
-    }
+    if( screenSize <= 900 ){  setActiveSideBar(false);  }
+    else{ setActiveSideBar(true);  }
 
-    
   }, [screenSize])
   
  
