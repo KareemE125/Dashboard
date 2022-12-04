@@ -10,7 +10,12 @@ import { useAppContext } from '../context/AppContext'
 export default function Sidebar() 
 {
 
-  let { activeSideBar, setActiveSideBar } = useAppContext();
+  let { activeSideBar, setActiveSideBar, screenSize } = useAppContext();
+
+  function handleCloseSidebar()
+  {
+    if( activeSideBar && screenSize <= 900 ){  setActiveSideBar(false);  }
+  }
 
   const activeLinkClass = 'flex items-center pl-5 py-2 rounded-lg text-white text-md m-1 dark:text-black dark:bg-gray-200 bg-slate-900 text-white';
 
@@ -23,7 +28,7 @@ export default function Sidebar()
       activeSideBar && <>
         <div className='flex justify-between items-center mt-2  '>
 
-          <Link className='items-center flex gap-1 text-xl font-extrabold tracking-tighter dark:text-white text-slate-900 ' to='/' onClick={() => setActiveSideBar(false) } >
+          <Link className='items-center flex gap-1 text-xl font-extrabold tracking-tighter dark:text-white text-slate-900 ' to='/' onClick={handleCloseSidebar} >
             <SiDgraph className='text-2xl' /> <span>Dashboard</span>
           </Link>
 
@@ -43,7 +48,7 @@ export default function Sidebar()
               </h4>
               {
                 item.links.map(link =>
-                  <NavLink className={({ isActive }) => isActive ? activeLinkClass : normalLinkClass} key={link.name} to={`/${link.name}`}>
+                  <NavLink className={({ isActive }) => isActive ? activeLinkClass : normalLinkClass} key={link.name} to={`/${link.name}`} onClick={handleCloseSidebar}>
                     <h5 className='text-sm font-medium capitalize flex items-center gap-3'>
                       {link.icon} {link.name}
                     </h5>

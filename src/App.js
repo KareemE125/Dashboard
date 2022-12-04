@@ -32,16 +32,11 @@ export default function App() {
 
 
           {/* Sidebar */}
-          {
-            activeSideBar ?
-              <aside className='w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white'>
-                <Sidebar />
-              </aside>
-              :
-              <aside className='w-0 dark:bg-secondary-dark-bg'>
-                <Sidebar />
-              </aside>
-          }
+          <aside className={` ${activeSideBar? 'w-72' : 'hidden'} fixed sidebar dark:bg-secondary-dark-bg bg-white`}>
+            <Sidebar />
+          </aside>
+              
+          
 
           {/* Navbar */}
           <nav className={`dark:bg-main-bg bg-main-bg min-h-screen w-full ${activeSideBar ? 'md:pl-72' : 'flex-2'}`}>
