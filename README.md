@@ -24,7 +24,7 @@ A Web App that provides the admin with a full dashboard with a huge number of fe
 4) Color-Picker
 
 ### CHARTS:
-The dashboard provides 8 different charts: Line, Area, Bar, Pie, Financial, Color-Mapping, Pyramid & Stacked.
+**The dashboard provides 8 different charts:** Line, Area, Bar, Pie, Financial, Color-Mapping, Pyramid & Stacked.
 
 ---
 ---
