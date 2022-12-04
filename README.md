@@ -1,6 +1,30 @@
 # Dashboard App
-A Web App that provides the admin with a full dashboard with different views and filtering. Moreover the app has light and dark Mode
+A Web App that provides the admin with a full dashboard with a huge number of features. Moreover the app has light and dark Mode.
 
+## Technologies:
+1) React Js
+2) React Router DOM
+3) React Icons
+4) Tailwind
+5) SyncFusion
+
+## Features:
+### DASHBOARD:
+1) Ecommerce
+
+### PAGES:
+1) Orders
+2) Employees
+3) Customers
+
+### APPS:
+1) Calendar
+2) Kanban
+3) Editor
+4) Color-Picker
+
+### CHARTS:
+The dashboard provides 8 different charts: Line, Area, Bar, Pie, Financial, Color-Mapping, Pyramid & Stacked.
 
 ---
 ---
