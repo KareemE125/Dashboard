@@ -46,9 +46,9 @@ export default function Navbar()
     <section className='flex'>
       <NavbarBtn title='Cart' color='blue' icon={<FiShoppingCart />} onClickFunc={() => navbarBtnHandler(TITLES.Cart)} />
 
-      <NavbarBtn title='Chat' color='blue' dotColor="#03C9D7" icon={<BsChatLeft />} onClickFunc={() => navbarBtnHandler(TITLES.Chat)} />
+      <NavbarBtn title='Chat' color='blue' dotColor="#00DD33" icon={<BsChatLeft />} onClickFunc={() => navbarBtnHandler(TITLES.Chat)} />
 
-      <NavbarBtn title='Notification' color='blue' dotColor="#03C9D7" icon={<RiNotification3Line />} onClickFunc={() => navbarBtnHandler(TITLES.Notification)} />
+      <NavbarBtn title='Notification' color='blue' dotColor="#00DD33" icon={<RiNotification3Line />} onClickFunc={() => navbarBtnHandler(TITLES.Notification)} />
 
       <TooltipComponent className='bg-slate-900 text-gray-100 hover:bg-gray-300 hover:text-slate-900 text-14 rounded-lg' content='Profile' position='BottomCenter'>
         <div className='flex items-center gap-2 cursor-pointer p-1 rounded-lg' onClick={() => navbarBtnHandler(TITLES.UserProfile)}>

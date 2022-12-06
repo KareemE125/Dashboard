@@ -23,7 +23,7 @@ export default function Sidebar()
 
   
 
-  return <aside className='pl-5 h-screen md:overflow-hidden overflow-auto md:hover:overflow-auto pb-8'>
+  return <aside className='pl-5 w-72 h-screen overflow-hidden  hover:overflow-auto lg:overflow-auto pb-8'>
     {
       activeSideBar && <>
         <div className='flex justify-between items-center mt-2  '>
@@ -33,7 +33,7 @@ export default function Sidebar()
           </Link>
 
           <TooltipComponent className='pr-2' content='Menu' position='BottomCenter'>
-            <button className='text-xl rounded-full p-2 hover:bg-light-gray mt-2 block md:hidden' type='button' onClick={()=> setActiveSideBar( prev => !prev ) }>
+            <button className='text-xl rounded-full p-2 hover:bg-light-gray mt-2 block lg:hidden' type='button' onClick={()=> setActiveSideBar( prev => !prev ) }>
               <MdOutlineCancel />
             </button>
           </TooltipComponent>

@@ -9,44 +9,42 @@ import { Ecommerce, Kanban, Calendar, Employees, Stacked, Pyramid, Customers, Li
 import './App.css'
 import { useAppContext } from './context/AppContext'
 
-export default function App() 
-{
+export default function App() {
 
   let { activeSideBar } = useAppContext();
-  
+
   return <main>
-      <BrowserRouter>
-        <div className='flex relative dark:bg-main-dark-bg'>
+    <BrowserRouter>
+      <div className='flex relative dark:bg-main-dark-bg'>
 
-          {/* Floating Setting icon button */}
-          <div className='fixed right-4 bottom-4' style={{ zIndex: '1000' }}>
-            <TooltipComponent content='Settings' position='TopCenter' >
-              <button type='button'
-                className='text-2xl p-3 hover:drop-shadow-xl hover:bg-light-gray text-white'
-                style={{ background: 'blue', borderRadius: '50%' }}
-              >
-                <FiSettings />
-              </button>
-            </TooltipComponent>
+        {/* Floating Setting icon button */}
+        <div className='fixed right-4 bottom-4' style={{ zIndex: '1000' }}>
+          <TooltipComponent content='Settings' position='TopCenter' >
+            <button type='button'
+              className='text-2xl p-3 hover:drop-shadow-xl hover:bg-light-gray text-white'
+              style={{ background: 'blue', borderRadius: '50%' }}
+            >
+              <FiSettings />
+            </button>
+          </TooltipComponent>
+        </div>
+
+        {/* Navbar */}
+        <nav className={`fixed left-0 right-0 top-0 dark:bg-main-bg bg-main-bg w-full ${activeSideBar ? 'lg:pl-72' : 'flex-2'}`}>
+          <div className=' bg-main-bg dark:bg-main-dark-bg navbar w-full'>
+            <Navbar />
           </div>
+        </nav>
 
+        <div className='flex w-full'>
 
           {/* Sidebar */}
-          <aside className={` ${activeSideBar? 'w-72' : 'hidden'} fixed sidebar dark:bg-secondary-dark-bg bg-white`}>
+          <aside className={` ${!activeSideBar && 'hidden'} fixed lg:static sidebar dark:bg-secondary-dark-bg bg-white`}>
             <Sidebar />
           </aside>
-              
-          
-          {/* Navbar */}
-          <nav className={`dark:bg-main-bg bg-main-bg min-h-screen w-full ${activeSideBar ? 'md:pl-72' : 'flex-2'}`}>
-            <div className='fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full'>
-              <Navbar />
-            </div>
-          </nav>
-
 
           {/* Routing */}
-          <div>
+          <main className='w-full py-16 px-4'>
             <Routes>
               {/* Dashboard */}
               <Route path='/' element={<Ecommerce />} />
@@ -73,9 +71,12 @@ export default function App()
               <Route path='/pyramid' element={<Pyramid />} />
               <Route path='/stacked' element={<Stacked />} />
             </Routes>
-          </div>
+          </main>
 
         </div>
-      </BrowserRouter>
-    </main>;
+
+
+      </div>
+    </BrowserRouter>
+  </main>;
 }
