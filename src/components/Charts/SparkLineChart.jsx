@@ -1,25 +1,26 @@
 import React from 'react'
 
 import { SparklineComponent, Inject, SparklineTooltip } from '@syncfusion/ej2-react-charts'
+import { SparklineAreaData } from '../../data/dummy';
 
 
 
 export default class SparkLineChart extends React.PureComponent
 {
+
   render() 
   {
-    const { id, type, height, data, currentColor, color } = this.props;
+    const { id, height, currentColor, color } = this.props;
     
     return <SparklineComponent
       id={id}
       height={height}
-      width='100%'
       lineWidth='1'
       valueType='Numeric'
-      type={type}
+      type='Line'
       fill={color}
       border={{ color: currentColor, width: 2 }}
-      dataSource={data}
+      dataSource={SparklineAreaData}
       xName='x-axis'
       yName='y-axis'
       tooltipSettings={{

@@ -3161,8 +3161,8 @@ export const stackedChartData = [
     { x: 'Mar', y: 143.4 },
     { x: 'Apr', y: 159.9 },
     { x: 'May', y: 159.9 },
-    { x: 'Jun', y: 159.9 },
-    { x: 'July', y: 159.9 },
+    { x: 'Jun', y: 100 },
+    { x: 'July', y: 380.8 },
   ],
   [
     { x: 'Jan', y: 111.1 },
@@ -3170,8 +3170,8 @@ export const stackedChartData = [
     { x: 'Mar', y: 143.4 },
     { x: 'Apr', y: 159.9 },
     { x: 'May', y: 159.9 },
-    { x: 'Jun', y: 159.9 },
-    { x: 'July', y: 159.9 },
+    { x: 'Jun', y: 200 },
+    { x: 'July', y: 122 },
   ],
 ];
 
@@ -3210,8 +3210,8 @@ export const stackedPrimaryXAxis = {
 
 export const stackedPrimaryYAxis = {
   lineStyle: { width: 0 },
-  minimum: 100,
-  maximum: 400,
+  minimum: 0,
+  maximum: 500,
   interval: 100,
   majorTickLines: { width: 0 },
   majorGridLines: { width: 1 },

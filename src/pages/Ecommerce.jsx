@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useAppContext } from '../context/AppContext'
 
 import { BsCurrencyDollar } from 'react-icons/bs'
@@ -6,10 +6,16 @@ import { GoPrimitiveDot } from 'react-icons/go'
 import { StackedChart, PieChart, Button, SparkLineChart } from '../components'
 import { earningData, SparklineAreaData, ecomPieChartData } from '../data/dummy'
 
-
 export default function Ecommerce() {
 
-  //let {} = useAppContext();
+  let { activeSideBar } = useAppContext();
+  const [widthRefresh, setWidthRefresh] = useState(true)
+
+  useEffect(() => {
+    setWidthRefresh(prev => !prev);
+  }, [activeSideBar])
+
+
 
   return <main className='flex flex-col flex-wrap justify-center w-full'>
 
@@ -82,9 +88,9 @@ export default function Ecommerce() {
         </div>
 
         {/* Chart */}
-        <div className='px-8 my-6'>
+        <div key={widthRefresh ? 'openSideWithChart' : 'closedSideWithChart'} className='px-8 my-6'>
           <div className='border-l-2 border-b-2 border-black dark:border-gray-400'>
-            <SparkLineChart id='sparkLineChart' type='Line' height='100px' data={SparklineAreaData} currentColor='blue' color='blue' />
+            <SparkLineChart id='sparkLineChart'  height='100px' currentColor='blue' color='blue' />
           </div>
         </div>
         <div className='px-8 my-8' >
@@ -110,13 +116,8 @@ export default function Ecommerce() {
 
 
         {/* Chart */}
-        <div className='px-8 my-6'>
-          <div className='border-l-2 border-b-2 border-black dark:border-gray-400'>
-            <StackedChart id='line-sparkline' type='Line' height='400px' data={SparklineAreaData} currentColor='blue' color='blue'/>
-          </div>
-        </div>
-        <div className='px-8 my-8' >
-
+        <div key={widthRefresh ? 'openSideWithChart' : 'closedSideWithChart'} className='lg:pl-8 mt-6'>
+          <StackedChart id='stackChart' height='400px' />
         </div>
 
       </div>

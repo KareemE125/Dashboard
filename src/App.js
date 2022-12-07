@@ -36,45 +36,40 @@ export default function App() {
           </div>
         </nav>
 
-        <div className='flex w-full'>
+        {/* Sidebar */}
+        <aside className={` ${!activeSideBar && 'hidden'} fixed sidebar dark:bg-secondary-dark-bg bg-white drop-shadow`}>
+          <Sidebar />
+        </aside>
 
-          {/* Sidebar */}
-          <aside className={` ${!activeSideBar && 'hidden'} fixed lg:static sidebar dark:bg-secondary-dark-bg bg-white drop-shadow`}>
-            <Sidebar />
-          </aside>
+        {/* Routing */}
+        <main className={` ${activeSideBar && 'lg:pl-72 lg:pr-6 lg:ml-6'} w-full px-6 pt-20 pb-10 `} >
+          <Routes>
+            {/* Dashboard */}
+            <Route path='/' element={<Ecommerce />} />
+            <Route path='/ecommerce' element={<Ecommerce />} />
 
-          {/* Routing */}
-          <main className='w-full  pt-20 pb-10 px-6'>
-            <Routes>
-              {/* Dashboard */}
-              <Route path='/' element={<Ecommerce />} />
-              <Route path='/ecommerce' element={<Ecommerce />} />
+            {/* Pages */}
+            <Route path='/orders' element={<Orders />} />
+            <Route path='/employees' element={<Employees />} />
+            <Route path='/customers' element={<Customers />} />
 
-              {/* Pages */}
-              <Route path='/orders' element={<Orders />} />
-              <Route path='/employees' element={<Employees />} />
-              <Route path='/customers' element={<Customers />} />
+            {/* Apps */}
+            <Route path='/kanban' element={<Kanban />} />
+            <Route path='/editor' element={<Editor />} />
+            <Route path='/calendar' element={<Calendar />} />
+            <Route path='/color-picker' element={<ColorPicker />} />
 
-              {/* Apps */}
-              <Route path='/kanban' element={<Kanban />} />
-              <Route path='/editor' element={<Editor />} />
-              <Route path='/calendar' element={<Calendar />} />
-              <Route path='/color-picker' element={<ColorPicker />} />
-
-              {/* Charts */}
-              <Route path='/line' element={<Line />} />
-              <Route path='/area' element={<Area />} />
-              <Route path='/bar' element={<Bar />} />
-              <Route path='/pie' element={<Pie />} />
-              <Route path='/financial' element={<Financial />} />
-              <Route path='/color-mapping' element={<ColorMapping />} />
-              <Route path='/pyramid' element={<Pyramid />} />
-              <Route path='/stacked' element={<Stacked />} />
-            </Routes>
-          </main>
-
-        </div>
-
+            {/* Charts */}
+            <Route path='/line' element={<Line />} />
+            <Route path='/area' element={<Area />} />
+            <Route path='/bar' element={<Bar />} />
+            <Route path='/pie' element={<Pie />} />
+            <Route path='/financial' element={<Financial />} />
+            <Route path='/color-mapping' element={<ColorMapping />} />
+            <Route path='/pyramid' element={<Pyramid />} />
+            <Route path='/stacked' element={<Stacked />} />
+          </Routes>
+        </main>
 
       </div>
     </BrowserRouter>
