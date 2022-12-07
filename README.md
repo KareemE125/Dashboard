@@ -1,6 +1,10 @@
 # Dashboard App
 A Web App that provides the admin with a full dashboard with a huge number of features. Moreover the app has light and dark Mode.
 
+## Screen Shot
+![ss](https://user-images.githubusercontent.com/61433385/206108974-237918f7-3780-4f88-b330-18a8cd8101c3.png)
+
+
 ## Technologies:
 1) React Js
 2) React Router DOM
