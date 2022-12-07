@@ -3082,6 +3082,7 @@ export const dropdownData = [
     Time: 'May 2021',
   },
 ];
+
 export const SparklineAreaData = [
   { 'x-axis': 1, 'y-axis': 2 },
   { 'x-axis': 2, 'y-axis': 6 },
@@ -3177,22 +3178,22 @@ export const stackedChartData = [
 
 export const stackedCustomSeries = [
 
-  { dataSource: stackedChartData[0],
+  { 
+    dataSource: stackedChartData[0],
     xName: 'x',
     yName: 'y',
     name: 'Budget',
     type: 'StackingColumn',
     background: 'blue',
-
   },
 
-  { dataSource: stackedChartData[1],
+  { 
+    dataSource: stackedChartData[1],
     xName: 'x',
     yName: 'y',
     name: 'Expense',
     type: 'StackingColumn',
     background: 'red',
-
   },
 
 ];

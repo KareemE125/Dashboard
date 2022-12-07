@@ -15,7 +15,7 @@ export default class SparkLineChart extends React.PureComponent
     return <SparklineComponent
       id={id}
       height={height}
-      lineWidth='1'
+      lineWidth='2'
       valueType='Numeric'
       type='Line'
       fill={color}
