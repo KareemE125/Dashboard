@@ -3083,11 +3083,11 @@ export const dropdownData = [
   },
 ];
 export const SparklineAreaData = [
-  { x: 1, yval: 2 },
-  { x: 2, yval: 6 },
-  { x: 3, yval: 8 },
-  { x: 4, yval: 5 },
-  { x: 5, yval: 10 },
+  { 'x-axis': 1, 'y-axis': 2 },
+  { 'x-axis': 2, 'y-axis': 6 },
+  { 'x-axis': 3, 'y-axis': 8 },
+  { 'x-axis': 4, 'y-axis': 5 },
+  { 'x-axis': 5, 'y-axis': 10 },
 
 ];
 

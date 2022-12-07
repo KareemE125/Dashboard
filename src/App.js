@@ -30,8 +30,8 @@ export default function App() {
         </div>
 
         {/* Navbar */}
-        <nav className={`fixed left-0 right-0 top-0 dark:bg-main-bg bg-main-bg w-full ${activeSideBar ? 'lg:pl-72' : 'flex-2'}`}>
-          <div className=' bg-main-bg dark:bg-main-dark-bg navbar w-full'>
+        <nav className={`fixed navbar left-0 right-0 top-0 dark:bg-main-bg bg-main-bg drop-shadow w-full ${activeSideBar ? 'lg:pl-72' : 'flex-2'}`}>
+          <div className=' bg-main-bg dark:bg-main-dark-bg w-full'>
             <Navbar />
           </div>
         </nav>
@@ -39,12 +39,12 @@ export default function App() {
         <div className='flex w-full'>
 
           {/* Sidebar */}
-          <aside className={` ${!activeSideBar && 'hidden'} fixed lg:static sidebar dark:bg-secondary-dark-bg bg-white`}>
+          <aside className={` ${!activeSideBar && 'hidden'} fixed lg:static sidebar dark:bg-secondary-dark-bg bg-white drop-shadow`}>
             <Sidebar />
           </aside>
 
           {/* Routing */}
-          <main className='w-full py-16 px-4'>
+          <main className='w-full  pt-20 pb-10 px-6'>
             <Routes>
               {/* Dashboard */}
               <Route path='/' element={<Ecommerce />} />
