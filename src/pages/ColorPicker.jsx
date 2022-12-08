@@ -1,14 +1,10 @@
 import React from 'react'
-
 import { ColorPickerComponent } from '@syncfusion/ej2-react-inputs'
-
 import { Header } from '../components'
-
 
 
 export default function ColorPicker() 
 {
-
   const pen = document.getElementById('preview');
   function changePenColor(color){ pen.style.backgroundColor = color.currentValue.hex; }
 
