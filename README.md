@@ -1,8 +1,21 @@
 # Dashboard App
+### React Js + SyncFusion + Tailwind = Greatness in this Web App
 A Web App that provides the admin with a full dashboard with a huge number of features. Moreover the app has light and dark Mode.
 
-## Screen Shot
+## Agenda:
+1) Screen Shots
+2) Technologies
+3) Features
+4) Getting Started with Create React App
+
+## Screen Shots:
 ![ss](https://user-images.githubusercontent.com/61433385/206108974-237918f7-3780-4f88-b330-18a8cd8101c3.png)
+![ss (8)](https://user-images.githubusercontent.com/61433385/206570880-2465b589-eddd-4cfb-8c41-81e373bdbd81.png)
+![ss (5)](https://user-images.githubusercontent.com/61433385/206570926-306bf59b-1a3b-4169-83c0-979af790234f.png)
+![ss (4)](https://user-images.githubusercontent.com/61433385/206570936-9ce6c6ff-b34f-4bf4-bc41-240ffa01ca36.png)
+![ss (3)](https://user-images.githubusercontent.com/61433385/206570947-3213b77d-a1c2-42ed-8c9d-73f6c6628fc0.png)
+![ss (2)](https://user-images.githubusercontent.com/61433385/206570958-ff1defeb-cdab-4e64-b2c4-7c598f747045.png)
+![ss (6)](https://user-images.githubusercontent.com/61433385/206570992-b4d4626a-d707-4882-817f-14cc72988238.png)
 
 
 ## Technologies:
