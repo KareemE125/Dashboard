@@ -42,7 +42,7 @@ export default function App() {
         </aside>
 
         {/* Routing */}
-        <main className={` ${activeSideBar && 'lg:pl-72 lg:pr-6 lg:ml-6'} w-full px-6 pt-20 pb-10 `} >
+        <main className={` ${activeSideBar && 'lg:pl-312px lg:pr-6'} w-full px-6 pt-20 pb-10 `} >
           <Routes>
             {/* Dashboard */}
             <Route path='/' element={<Ecommerce />} />
