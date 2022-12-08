@@ -31,7 +31,7 @@ export const gridOrderImage = (props) => (
       alt="order-item"
     />
   </div>
-); 
+);
 
 export const gridOrderStatus = (props) => (
   <button
@@ -44,22 +44,30 @@ export const gridOrderStatus = (props) => (
 );
 
 export const kanbanGrid = [
-  { headerText: 'To Do',
+  {
+    headerText: 'To Do',
     keyField: 'Open',
-    allowToggle: true },
+    allowToggle: true
+  },
 
-  { headerText: 'In Progress',
+  {
+    headerText: 'In Progress',
     keyField: 'InProgress',
-    allowToggle: true },
+    allowToggle: true
+  },
 
-  { headerText: 'Testing',
+  {
+    headerText: 'Testing',
     keyField: 'Testing',
     allowToggle: true,
-    isExpanded: false },
+    isExpanded: false
+  },
 
-  { headerText: 'Done',
+  {
+    headerText: 'Done',
     keyField: 'Close',
-    allowToggle: true },
+    allowToggle: true
+  },
 ];
 const gridEmployeeProfile = (props) => (
   <div className="flex items-center pl-3">
@@ -78,46 +86,14 @@ const gridEmployeeCountry = (props) => (
   </div>
 );
 export const EditorData = () => (
-  <div>
-    <h3>
-      Try React
-      React has been designed from the start for gradual adoption, and you can use as little or as much React as you need. Whether you want to get a taste of React, add some interactivity to a simple HTML page, or start a complex React-powered app, the links in this section will help you get started.
-
-      Online Playgrounds
-      If you’re interested in playing around with React, you can use an online code playground. Try a Hello World template on CodePen, CodeSandbox, or Stackblitz.
-
-      If you prefer to use your own text editor, you can also download this HTML file, edit it, and open it from the local filesystem in your browser. It does a slow runtime code transformation, so we’d only recommend using this for simple demos.
-
-      Add React to a Website
-      You can add React to an HTML page in one minute. You can then either gradually expand its presence, or keep it contained to a few dynamic widgets.
-
-      Create a New React App
-      When starting a React project, a simple HTML page with script tags might still be the best option. It only takes a minute to set up!
-
-      As your application grows, you might want to consider a more integrated setup. There are several JavaScript toolchains we recommend for larger applications. Each of them can work with little to no configuration and lets you take full advantage of the rich React ecosystem. Learn how.
-
-      Learn React
-      People come to React from different backgrounds and with different learning styles. Whether you prefer a more theoretical or a practical approach, we hope you’ll find this section helpful.
-
-      If you prefer to learn by doing, start with our practical tutorial.
-      If you prefer to learn concepts step by step, start with our guide to main concepts.
-      Like any unfamiliar technology, React does have a learning curve. With practice and some patience, you will get the hang of it.
-
-      First Examples
-      The React homepage contains a few small React examples with a live editor. Even if you don’t know anything about React yet, try changing their code and see how it affects the result.
-
-      React for Beginners
-      If you feel that the React documentation goes at a faster pace than you’re comfortable with, check out this overview of React by Tania Rascia. It introduces the most important React concepts in a detailed, beginner-friendly way. Once you’re done, give the documentation another try!
-
-      React for Designers
-      If you’re coming from a design background, these resources are a great place to get started.
-
-      JavaScript Resources
-      The React documentation assumes some familiarity with programming in the JavaScript language. You don’t have to be an expert, but it’s harder to learn both React and JavaScript at the same time.
-
-      We recommend going through this JavaScript overview to check your knowledge level. It will take you between 30 minutes and an hour but you will feel more confident learning React.
-    </h3>
-  </div>
+  <p>
+    I'm an enthusiastic software engineer / web developer eager to contribute to team success through hard work, attention to details, excellent organizational and management skills, always learning new technologies.
+    <br /> <br />
+    Have clear understanding of software Development life cycle, Agile methodologies as Scrum.
+    Motivated to learn, grow and excel in software engineering and development.
+    <br /> <br />
+    I have experience with state management( context - Redux ), axios, jwt, joi, routing, hooks, react router dom. I am aware of the full software development life cycle from planning to deployment and the Agile working methodologies as Scrum. I am an enthusiastic frontend developer software engineering React.Js, I have worked on my projects, I am eager to excel through team work to produce amazing project.
+  </p>
 );
 const customerGridImage = (props) => (
   <div className="image flex gap-4">
@@ -322,20 +298,26 @@ export const colorMappingData = [
 ];
 
 export const rangeColorMapping = [
-  { label: '1°C to 10°C',
+  {
+    label: '1°C to 10°C',
     start: '1',
     end: '10',
-    colors: colorMappingData[1] },
+    colors: colorMappingData[1]
+  },
 
-  { label: '11°C to 20°C',
+  {
+    label: '11°C to 20°C',
     start: '11',
     end: '20',
-    colors: colorMappingData[2] },
+    colors: colorMappingData[2]
+  },
 
-  { label: '21°C to 30°C',
+  {
+    label: '21°C to 30°C',
     start: '21',
     end: '30',
-    colors: colorMappingData[3] },
+    colors: colorMappingData[3]
+  },
 
 ];
 
@@ -392,38 +374,50 @@ export const LinePrimaryYAxis = {
 
 export const customersGrid = [
   { type: 'checkbox', width: '50' },
-  { headerText: 'Name',
+  {
+    headerText: 'Name',
     width: '150',
     template: customerGridImage,
-    textAlign: 'Center' },
-  { field: 'ProjectName',
+    textAlign: 'Center'
+  },
+  {
+    field: 'ProjectName',
     headerText: 'Project Name',
     width: '150',
-    textAlign: 'Center' },
-  { field: 'Status',
+    textAlign: 'Center'
+  },
+  {
+    field: 'Status',
     headerText: 'Status',
     width: '130',
     format: 'yMd',
     textAlign: 'Center',
-    template: customerGridStatus },
+    template: customerGridStatus
+  },
   {
     field: 'Weeks',
     headerText: 'Weeks',
     width: '100',
     format: 'C2',
-    textAlign: 'Center' },
-  { field: 'Budget',
+    textAlign: 'Center'
+  },
+  {
+    field: 'Budget',
     headerText: 'Budget',
     width: '100',
     format: 'yMd',
-    textAlign: 'Center' },
+    textAlign: 'Center'
+  },
 
-  { field: 'Location',
+  {
+    field: 'Location',
     headerText: 'Location',
     width: '150',
-    textAlign: 'Center' },
+    textAlign: 'Center'
+  },
 
-  { field: 'CustomerID',
+  {
+    field: 'CustomerID',
     headerText: 'Customer ID',
     width: '120',
     textAlign: 'Center',
@@ -433,39 +427,51 @@ export const customersGrid = [
 ];
 
 export const employeesGrid = [
-  { field: 'EmployeeID',
+  {
+    field: 'EmployeeID',
     headerText: 'Employee ID',
     width: '125',
-    textAlign: 'Center' },
-  { headerText: 'Image',
+    textAlign: 'Center'
+  },
+  {
+    headerText: 'Image',
     width: '120',
     template: gridEmployeeProfile,
-    textAlign: 'Center' },
-  { field: 'Name',
+    textAlign: 'Center'
+  },
+  {
+    field: 'Name',
     headerText: 'Name',
     width: '170',
     textAlign: 'Center',
   },
-  { field: 'Title',
+  {
+    field: 'Title',
     headerText: 'Designation',
     width: '170',
     textAlign: 'Center',
   },
-  { headerText: 'Country',
+  {
+    headerText: 'Country',
     width: '120',
     textAlign: 'Center',
-    template: gridEmployeeCountry },
+    template: gridEmployeeCountry
+  },
 
-  { field: 'HireDate',
+  {
+    field: 'HireDate',
     headerText: 'Hire Date',
     width: '135',
     format: 'yMd',
-    textAlign: 'Center' },
+    textAlign: 'Center'
+  },
 
-  { field: 'ReportsTo',
+  {
+    field: 'ReportsTo',
     headerText: 'Reports To',
     width: '120',
-    textAlign: 'Center' },
+    textAlign: 'Center'
+  },
 ];
 
 export const links = [
@@ -883,7 +889,8 @@ export const ordersGrid = [
     editType: 'dropdownedit',
     textAlign: 'Center',
   },
-  { field: 'CustomerName',
+  {
+    field: 'CustomerName',
     headerText: 'Customer Name',
     width: '150',
     textAlign: 'Center',
@@ -1489,7 +1496,7 @@ export const employeesData = [
     Country: 'USA',
     ReportsTo: 'Carson',
     EmployeeImage:
-    avatar3,
+      avatar3,
   },
   {
     EmployeeID: 2,
@@ -1559,7 +1566,7 @@ export const employeesData = [
     Country: 'USA',
     ReportsTo: 'Carson',
     EmployeeImage:
-    avatar2,
+      avatar2,
 
   },
   {
@@ -1630,7 +1637,7 @@ export const employeesData = [
     Country: 'USA',
     ReportsTo: 'Carson',
     EmployeeImage:
-    avatar,
+      avatar,
   },
   {
     EmployeeID: 2,
@@ -1700,7 +1707,7 @@ export const employeesData = [
     Country: 'USA',
     ReportsTo: 'Carson',
     EmployeeImage:
-    avatar2,
+      avatar2,
 
   },
   {
@@ -1771,7 +1778,7 @@ export const employeesData = [
     Country: 'USA',
     ReportsTo: 'Carson',
     EmployeeImage:
-    avatar2,
+      avatar2,
 
   },
   {
@@ -1842,7 +1849,7 @@ export const employeesData = [
     Country: 'USA',
     ReportsTo: 'Carson',
     EmployeeImage:
-    avatar2,
+      avatar2,
 
   },
   {
@@ -1913,7 +1920,7 @@ export const employeesData = [
     Country: 'USA',
     ReportsTo: 'Carson',
     EmployeeImage:
-    avatar2,
+      avatar2,
 
   },
   {
@@ -1984,7 +1991,7 @@ export const employeesData = [
     Country: 'USA',
     ReportsTo: 'Carson',
     EmployeeImage:
-    avatar2,
+      avatar2,
 
   },
   {
@@ -2055,7 +2062,7 @@ export const employeesData = [
     Country: 'USA',
     ReportsTo: 'Carson',
     EmployeeImage:
-    avatar2,
+      avatar2,
 
   },
   {
@@ -3026,29 +3033,35 @@ export const SparklineAreaData = [
 ];
 
 export const lineCustomSeries = [
-  { dataSource: lineChartData[0],
+  {
+    dataSource: lineChartData[0],
     xName: 'x',
     yName: 'y',
     name: 'Germany',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
-    type: 'Line' },
+    type: 'Line'
+  },
 
-  { dataSource: lineChartData[1],
+  {
+    dataSource: lineChartData[1],
     xName: 'x',
     yName: 'y',
     name: 'England',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
-    type: 'Line' },
+    type: 'Line'
+  },
 
-  { dataSource: lineChartData[2],
+  {
+    dataSource: lineChartData[2],
     xName: 'x',
     yName: 'y',
     name: 'India',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
-    type: 'Line' },
+    type: 'Line'
+  },
 
 ];
 
@@ -3111,7 +3124,7 @@ export const stackedChartData = [
 
 export const stackedCustomSeries = [
 
-  { 
+  {
     dataSource: stackedChartData[0],
     xName: 'x',
     yName: 'y',
@@ -3120,7 +3133,7 @@ export const stackedCustomSeries = [
     background: 'blue',
   },
 
-  { 
+  {
     dataSource: stackedChartData[1],
     xName: 'x',
     yName: 'y',
