@@ -86,14 +86,14 @@ const gridEmployeeCountry = (props) => (
   </div>
 );
 export const EditorData = () => (
-  <p>
+  <h3>
     I'm an enthusiastic software engineer / web developer eager to contribute to team success through hard work, attention to details, excellent organizational and management skills, always learning new technologies.
     <br /> <br />
     Have clear understanding of software Development life cycle, Agile methodologies as Scrum.
     Motivated to learn, grow and excel in software engineering and development.
     <br /> <br />
     I have experience with state management( context - Redux ), axios, jwt, joi, routing, hooks, react router dom. I am aware of the full software development life cycle from planning to deployment and the Agile working methodologies as Scrum. I am an enthusiastic frontend developer software engineering React.Js, I have worked on my projects, I am eager to excel through team work to produce amazing project.
-  </p>
+  </h3>
 );
 const customerGridImage = (props) => (
   <div className="image flex gap-4">

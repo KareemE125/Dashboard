@@ -25,10 +25,35 @@ export default function AppContextProvider({ children })
     // For detecting screen size (Web or Mobile)
     const [screenSize, setScreenSize] = useState(window.innerWidth);
 
+    // For App Theming
+    const storedColor = localStorage.getItem('color');
+    const storedTheme = localStorage.getItem('theme');
+
+    const [currentColor, setCurrentColor] = useState(storedColor);
+    const [currentMode, setCurrentMode] = useState(storedTheme);
+    const [activeThemeBar, setActiveThemeBar] = useState(false);
+    
+    function setColor(color)
+    { 
+        setCurrentColor(color); 
+        localStorage.setItem('color', color); 
+        setActiveThemeBar(false); 
+    }
+    
+    function setMode(event)
+    { 
+        setCurrentMode(event.target.value); 
+        localStorage.setItem('theme', event.target.value);  
+        setActiveThemeBar(false);  
+    }
+
     return <AppContext.Provider value={{ 
             activeSideBar, setActiveSideBar, 
             isClicked, setIsClicked, navbarBtnHandler,
-            screenSize, setScreenSize
+            screenSize, setScreenSize,
+            currentColor, setColor,
+            currentMode, setMode,
+            activeThemeBar, setActiveThemeBar
         }}>
         {children}
     </AppContext.Provider>

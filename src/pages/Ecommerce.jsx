@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { useAppContext } from '../context/AppContext'
 
-import { BsCurrencyDollar } from 'react-icons/bs'
 import { GoPrimitiveDot } from 'react-icons/go'
-import { StackedChart, PieChart, Button, SparkLineChart } from '../components'
-import { earningData, SparklineAreaData, ecomPieChartData } from '../data/dummy'
+import { StackedChart, Button, SparkLineChart } from '../components'
+import { earningData } from '../data/dummy'
 
 export default function Ecommerce() {
 
-  let { activeSideBar } = useAppContext();
+  let { activeSideBar, currentColor } = useAppContext();
   const [widthRefresh, setWidthRefresh] = useState(true)
 
   useEffect(() => {
@@ -30,7 +29,7 @@ export default function Ecommerce() {
       </div>
 
       <div className='my-4'>
-        <Button color="white" bgColor="blue" text="Download" size='md' borderRadius="10px" />
+        <Button color="white" bgColor={currentColor} text="Download" size='md' borderRadius="10px" />
       </div>
 
     </section>
@@ -90,11 +89,11 @@ export default function Ecommerce() {
         {/* Chart */}
         <div key={widthRefresh ? 'openSideWithChart' : 'closedSideWithChart'} className='px-8 my-6'>
           <div className='border-l-2 border-b-2 border-black dark:border-gray-400'>
-            <SparkLineChart id='sparkLineChart'  height='100px' currentColor='blue' color='blue' />
+            <SparkLineChart id='sparkLineChart'  height='100px' currentColor={currentColor} color={currentColor} />
           </div>
         </div>
         <div className='px-8 my-8' >
-          <Button color='white' bgColor='blue' text='Download Report' borderRadius='10px' />
+          <Button color='white' bgColor={currentColor} text='Download Report' borderRadius='10px' />
         </div>
 
       </div>

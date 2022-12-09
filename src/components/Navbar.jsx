@@ -22,7 +22,7 @@ const TITLES =
 
 export default function Navbar() 
 {
-  const { setActiveSideBar, isClicked, navbarBtnHandler, screenSize, setScreenSize } = useAppContext();
+  const { setActiveSideBar, isClicked, navbarBtnHandler, screenSize, setScreenSize, currentColor } = useAppContext();
 
   useEffect(() => {
 
@@ -41,16 +41,20 @@ export default function Navbar()
   
  
   return <nav className='flex justify-between p-2 relative'>
-    <NavbarBtn title='Menu' color='blue' icon={<AiOutlineMenu />} onClickFunc={() => setActiveSideBar(prev => !prev)} />
+    <NavbarBtn title='Menu' color={currentColor} icon={<AiOutlineMenu />} onClickFunc={() => setActiveSideBar(prev => !prev)} />
 
     <section className='flex'>
-      <NavbarBtn title='Cart' color='blue' icon={<FiShoppingCart />} onClickFunc={() => navbarBtnHandler(TITLES.Cart)} />
+      <NavbarBtn title='Cart' color={currentColor} icon={<FiShoppingCart />} onClickFunc={() => navbarBtnHandler(TITLES.Cart)} />
 
-      <NavbarBtn title='Chat' color='blue' dotColor="#00DD33" icon={<BsChatLeft />} onClickFunc={() => navbarBtnHandler(TITLES.Chat)} />
+      <NavbarBtn title='Chat' color={currentColor} dotColor="#00DD33" icon={<BsChatLeft />} onClickFunc={() => navbarBtnHandler(TITLES.Chat)} />
 
-      <NavbarBtn title='Notification' color='blue' dotColor="#00DD33" icon={<RiNotification3Line />} onClickFunc={() => navbarBtnHandler(TITLES.Notification)} />
+      <NavbarBtn title='Notification' color={currentColor} dotColor="#00DD33" icon={<RiNotification3Line />} onClickFunc={() => navbarBtnHandler(TITLES.Notification)} />
 
-      <TooltipComponent className='bg-slate-900 text-gray-100 hover:bg-gray-300 hover:text-slate-900 text-14 rounded-lg' content='Profile' position='BottomCenter'>
+      <TooltipComponent 
+      className='text-gray-100 hover:bg-gray-300 hover:text-black text-14 rounded-lg' 
+      style={{background: currentColor}}
+      content='Profile' 
+      position='BottomCenter'>
         <div className='flex items-center gap-2 cursor-pointer p-1 rounded-lg' onClick={() => navbarBtnHandler(TITLES.UserProfile)}>
           <img src={avatar} alt='avatar' className='rounded-full w-8 h-8' />
           <p className=' flex items-center'>

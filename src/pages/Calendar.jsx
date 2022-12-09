@@ -9,7 +9,7 @@ import { Header } from '../components'
 export default function Calendar() {
 
 
-  return <main className='bg-white rounded-3xl'>
+  return <main className='h-screen'>
     <Header title='Calender' category='App' />
     <ScheduleComponent
       height='500px'

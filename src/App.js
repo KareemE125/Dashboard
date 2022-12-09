@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { FiSettings } from 'react-icons/fi'
 import { TooltipComponent } from '@syncfusion/ej2-react-popups'
 
-import { Navbar, Footer, Sidebar, ThemeSettings } from './components'
+import { Navbar, Sidebar, ThemeSettings } from './components'
 import { Ecommerce, Kanban, Calendar, Employees, Stacked, Pyramid, Customers, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor, Orders } from './pages'
 
 import './App.css'
@@ -11,9 +11,9 @@ import { useAppContext } from './context/AppContext'
 
 export default function App() {
 
-  let { activeSideBar } = useAppContext();
+  let { activeSideBar, activeThemeBar, setActiveThemeBar, currentColor, currentMode } = useAppContext();
 
-  return <main>
+  return <main className={currentMode === 'Dark'? 'dark' : ''} >
     <BrowserRouter>
       <div className='flex relative dark:bg-main-dark-bg'>
 
@@ -22,7 +22,7 @@ export default function App() {
           <TooltipComponent content='Settings' position='TopCenter' >
             <button type='button'
               className='text-2xl p-3 hover:drop-shadow-xl hover:bg-light-gray text-white'
-              style={{ background: 'blue', borderRadius: '50%' }}
+              style={{ background: currentColor, borderRadius: '50%' }} onClick={()=> setActiveThemeBar(true)}
             >
               <FiSettings />
             </button>
@@ -43,6 +43,9 @@ export default function App() {
 
         {/* Routing */}
         <main className={` ${activeSideBar && 'lg:pl-312px lg:pr-6'} w-full px-6 pt-20 pb-10 `} >
+
+          {activeThemeBar && <ThemeSettings />}
+
           <Routes>
             {/* Dashboard */}
             <Route path='/' element={<Ecommerce />} />

@@ -6,7 +6,7 @@ import { Header } from '../components'
 export default function Editor() 
 {
   
-  return <main className='bg-white rounded-3xl'>
+  return <main className='h-screen'>
     <Header title='Text Editor' category='App'/>
     <RichTextEditorComponent>
       <EditorData/>

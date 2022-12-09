@@ -5,7 +5,7 @@ import { kanbanData, kanbanGrid } from '../data/dummy'
 import { Header } from '../components'
 
 export default function Kanban() {
-  return <main className='bg-white rounded-3xl'>
+  return <main className='h-screen'>
     <Header title='Kanban' category='App' />
     <KanbanComponent
       id='kanban'
