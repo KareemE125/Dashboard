@@ -10,6 +10,8 @@ A Web App that provides the admin with a full dashboard with a huge number of fe
 
 ## Screen Shots:
 ![ss](https://user-images.githubusercontent.com/61433385/206108974-237918f7-3780-4f88-b330-18a8cd8101c3.png)
+![dark](https://user-images.githubusercontent.com/61433385/206592588-d81c0c3a-2005-42dc-ab7e-421be96a47d0.png)
+![dark e](https://user-images.githubusercontent.com/61433385/206592591-5d75934b-0079-48d8-b7dd-df438121566d.png)
 ![ss (8)](https://user-images.githubusercontent.com/61433385/206570880-2465b589-eddd-4cfb-8c41-81e373bdbd81.png)
 ![ss (5)](https://user-images.githubusercontent.com/61433385/206570926-306bf59b-1a3b-4169-83c0-979af790234f.png)
 ![ss (4)](https://user-images.githubusercontent.com/61433385/206570936-9ce6c6ff-b34f-4bf4-bc41-240ffa01ca36.png)
