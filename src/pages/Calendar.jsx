@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ScheduleComponent, Day, Week, Month, Year, Agenda, Resize, DragAndDrop, ViewsDirective, ViewDirective, Inject } from '@syncfusion/ej2-react-schedule'
+import { ScheduleComponent, Day, Week, Month, Year, Agenda, Resize, DragAndDrop, Inject } from '@syncfusion/ej2-react-schedule'
 
 import { scheduleData } from '../data/dummy'
 import { Header } from '../components'
@@ -9,7 +9,7 @@ import { Header } from '../components'
 export default function Calendar() {
 
 
-  return <main className='h-screen'>
+  return <main>
     <Header title='Calender' category='App' />
     <ScheduleComponent
       height='500px'

@@ -10,7 +10,7 @@ export default function ColorPicker() {
     penRef.current.style.backgroundColor = color.currentValue.hex;
   }
 
-  return <main className='h-screen'>
+  return <main>
     <Header title='Color Picker' category='App' />
     <section className='flex flex-col items-center justify-center text-center'>
       <div className='rounded-3xl bg-white pb-2' style={{width: 'fit-content'}} >

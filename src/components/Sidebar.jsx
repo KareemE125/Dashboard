@@ -42,7 +42,7 @@ export default function Sidebar() {
         <section className='mt-10'>
           {
             links.map(item => <div key={item.title} >
-              <h4 className='text-gray-500 font-medium m-2 mt-4 uppercase'>
+              <h4 className='text-gray-500 dark:text-white font-medium m-2 mt-4 uppercase'>
                 {item.title}
               </h4>
               {

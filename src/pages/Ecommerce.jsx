@@ -24,7 +24,7 @@ export default function Ecommerce() {
       <div className='flex justify-between items-center'>
         <div className='text-xl bg-gray-200 bg-opacity-50 p-2 rounded-xl'>
           <p className='text-slate-900 font-bold'>Earnings</p>
-          <p>$71,308.44</p>
+          <p className='text-slate-800'>$71,308.44</p>
         </div>
       </div>
 

@@ -1,10 +1,10 @@
 import React from 'react';
 import { AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock } from 'react-icons/ai';
 import { FiShoppingBag, FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
-import { BsKanban, BsBarChart, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
+import { BsKanban, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
 import { BiColorFill } from 'react-icons/bi';
 import { IoMdContacts } from 'react-icons/io';
-import { RiContactsLine, RiStockLine } from 'react-icons/ri';
+import { RiContactsLine } from 'react-icons/ri';
 import { MdOutlineSupervisorAccount } from 'react-icons/md';
 import { HiOutlineRefresh } from 'react-icons/hi';
 import { TiTick } from 'react-icons/ti';
@@ -95,6 +95,7 @@ export const EditorData = () => (
     I have experience with state management( context - Redux ), axios, jwt, joi, routing, hooks, react router dom. I am aware of the full software development life cycle from planning to deployment and the Agile working methodologies as Scrum. I am an enthusiastic frontend developer software engineering React.Js, I have worked on my projects, I am eager to excel through team work to produce amazing project.
   </h3>
 );
+
 const customerGridImage = (props) => (
   <div className="image flex gap-4">
     <img
@@ -542,14 +543,6 @@ export const links = [
       {
         name: 'pie',
         icon: <FiPieChart />,
-      },
-      {
-        name: 'financial',
-        icon: <RiStockLine />,
-      },
-      {
-        name: 'color-mapping',
-        icon: <BsBarChart />,
       },
       {
         name: 'pyramid',
