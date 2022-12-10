@@ -1,6 +1,8 @@
-# Dashboard App
-### React Js + SyncFusion + Tailwind = Greatness in this Web App
-A Web App that provides the admin with a full dashboard with a huge number of features. Moreover the app has light and dark Mode.
+# Dashboard App 📊
+### React Js ➕ SyncFusion ➕ Tailwind = Greatness in this Web App
+A Web App that provides the admin with a full dashboard with a huge number of features, different charts, various color themes, light mode and dark mode.
+
+### Live Demo 👉 https://dashboard-125.netlify.app/
 
 ## Agenda:
 1) Screen Shots
@@ -44,7 +46,7 @@ A Web App that provides the admin with a full dashboard with a huge number of fe
 4) Color-Picker
 
 ### CHARTS:
-**The dashboard provides 8 different charts:** Line, Area, Bar, Pie, Financial, Color-Mapping, Pyramid & Stacked.
+**The dashboard provides 8 different charts:** Line, Area, Bar, Pie, Pyramid & Stacked.
 
 ---
 ---
