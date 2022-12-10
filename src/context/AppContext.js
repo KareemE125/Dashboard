@@ -15,8 +15,8 @@ export default function AppContextProvider({ children })
     const storedColor = localStorage.getItem('color');
     const storedTheme = localStorage.getItem('theme');
 
-    const [currentColor, setCurrentColor] = useState(storedColor);
-    const [currentMode, setCurrentMode] = useState(storedTheme);
+    const [currentColor, setCurrentColor] = useState(storedColor || '#1E4DB7');
+    const [currentMode, setCurrentMode] = useState(storedTheme || 'Dark');
     const [activeThemeBar, setActiveThemeBar] = useState(false);
     
     function setColor(color)
