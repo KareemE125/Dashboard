@@ -9,7 +9,17 @@ A Web App that provides the admin with a full dashboard with a huge number of fe
 4) Getting Started with Create React App
 
 ## Screen Shots:
+![screencapture-localhost-3000-ecommerce-2022-12-10-02_34_52](https://user-images.githubusercontent.com/61433385/206819923-d4af771d-c566-4d0e-9a2c-818a29756532.png)
 ![dark](https://user-images.githubusercontent.com/61433385/206592588-d81c0c3a-2005-42dc-ab7e-421be96a47d0.png)
+![screencapture-localhost-3000-orders-2022-12-10-02_37_59](https://user-images.githubusercontent.com/61433385/206819931-17acada5-e85d-456b-a7ef-babda260bd3d.png)
+![screencapture-localhost-3000-calendar-2022-12-10-02_40_25](https://user-images.githubusercontent.com/61433385/206819943-d3b5a94b-e743-4a31-b165-d3daf81f30c1.png)
+![screencapture-localhost-3000-kanban-2022-12-10-02_40_47](https://user-images.githubusercontent.com/61433385/206819947-ecc52891-2af1-44de-8f0e-c423cdbd65be.png)
+![screencapture-localhost-3000-editor-2022-12-10-02_40_53](https://user-images.githubusercontent.com/61433385/206819951-5ff277c8-9dfd-4cb3-9f69-7c3c5434e6d2.png)
+![screencapture-localhost-3000-color-picker-2022-12-10-02_41_06](https://user-images.githubusercontent.com/61433385/206819956-35262c78-3d4c-4d60-8212-9f27bbf2f5af.png)
+![screencapture-localhost-3000-line-2022-12-10-02_41_20](https://user-images.githubusercontent.com/61433385/206819960-56645472-79e3-48bf-ab63-52320a1ae4c2.png)
+![screencapture-localhost-3000-pie-2022-12-10-02_41_56](https://user-images.githubusercontent.com/61433385/206819964-3b342bf6-3b7b-4d8c-a28e-cfd6971ca74a.png)
+![screencapture-localhost-3000-pyramid-2022-12-10-02_42_09](https://user-images.githubusercontent.com/61433385/206819966-948ec12b-47ca-4fc9-a8cc-d632f12f82ba.png)
+![screencapture-localhost-3000-bar-2022-12-10-02_42_53](https://user-images.githubusercontent.com/61433385/206819968-9c66a29b-3f0b-4314-8fd7-a2e014dad728.png)
 
 ## Technologies:
 1) React Js
