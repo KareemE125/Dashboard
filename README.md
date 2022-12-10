@@ -9,16 +9,7 @@ A Web App that provides the admin with a full dashboard with a huge number of fe
 4) Getting Started with Create React App
 
 ## Screen Shots:
-![ss](https://user-images.githubusercontent.com/61433385/206108974-237918f7-3780-4f88-b330-18a8cd8101c3.png)
 ![dark](https://user-images.githubusercontent.com/61433385/206592588-d81c0c3a-2005-42dc-ab7e-421be96a47d0.png)
-![dark e](https://user-images.githubusercontent.com/61433385/206592591-5d75934b-0079-48d8-b7dd-df438121566d.png)
-![ss (8)](https://user-images.githubusercontent.com/61433385/206570880-2465b589-eddd-4cfb-8c41-81e373bdbd81.png)
-![ss (5)](https://user-images.githubusercontent.com/61433385/206570926-306bf59b-1a3b-4169-83c0-979af790234f.png)
-![ss (4)](https://user-images.githubusercontent.com/61433385/206570936-9ce6c6ff-b34f-4bf4-bc41-240ffa01ca36.png)
-![ss (3)](https://user-images.githubusercontent.com/61433385/206570947-3213b77d-a1c2-42ed-8c9d-73f6c6628fc0.png)
-![ss (2)](https://user-images.githubusercontent.com/61433385/206570958-ff1defeb-cdab-4e64-b2c4-7c598f747045.png)
-![ss (6)](https://user-images.githubusercontent.com/61433385/206570992-b4d4626a-d707-4882-817f-14cc72988238.png)
-
 
 ## Technologies:
 1) React Js
