@@ -2,7 +2,7 @@
 ### React Js ➕ SyncFusion ➕ Tailwind = Greatness in this Web App
 A Web App that provides the admin with a full dashboard with a huge number of features, different charts, various color themes, light mode and dark mode.
 
-### Live Demo 👉 https://dashboard-125.netlify.app/
+### Live Demo 👉 https://dashboard-rho-gilt.vercel.app/
 
 ## Agenda:
 1) Screen Shots
